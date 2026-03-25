@@ -52,4 +52,4 @@ print(fruits_pesticide_list[1][1])
 
 
 
-print(\n)
+# print(\n)
