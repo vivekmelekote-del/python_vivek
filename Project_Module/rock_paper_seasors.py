@@ -13,3 +13,14 @@ elif(computer_num == 2):
 elif(computer_num == 3):
     print("Computer chose Scissors")
     print(lib_file.scissors)
+
+if(input_num == computer_num):#if both are same, it's a tie
+    print("It's a tie")
+elif(input_num == 1 and computer_num == 3):#Rock beats scissors
+    print("You win")
+elif(input_num == 2 and computer_num == 1):#Paper beats Rock
+    print("You win")
+elif(input_num == 3 and computer_num == 2):#Scissors beats Paper
+    print("You win")
+else:
+    print("Computer wins")
