@@ -1,5 +1,5 @@
 import random
-import lib_file
+import libfile.lib_file as lib_file
 print(lib_file.integer_val)
 input_num = input("Enter 1: for Rock, 2: for Paper or 3: for Scissors: ")
 input_num = int(input_num)
