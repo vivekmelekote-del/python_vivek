@@ -5,8 +5,8 @@
 import random
 print(random.randint(10,150))
 
-import Starting_With_Python
+import Starting_With_Python.main as main
 
-print(name)
+print(main.name)
 #module
 my_fav_num = 3.142
