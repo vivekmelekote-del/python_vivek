@@ -47,6 +47,7 @@ for i in range(auto_length):
 # Print either by for loop or by using the join() function
 for char in Password_list:
     print(char, end="")# this will print the characters in the password list without a new line
-    # print(char, end="")# this will print the characters in the password list without a new line
+#Above end="" is used to print the characters in the same line, without it, it will print each character in a new line
+
 random.shuffle(Password_list)# this will shuffle the password list
 print("Your password is:", "".join(Password_list)) #Converts the list to a string and prints it
