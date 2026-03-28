@@ -14,7 +14,8 @@ def choose_and_check():# for letter in choosen_word:
 
     #When the player guesses all the letter in the word, exit the game
     if("-" not in blank_list):
-        print("You win")
+        print("CONGRATULATIONS!!!")
+        print("*************************************You win*************************************")
         exit()
 
     #Print the hangman ascii art based on the number of wrong guesses
@@ -22,7 +23,8 @@ def choose_and_check():# for letter in choosen_word:
 
     #When player looses all this chances, exit the game
     if(count_fo_false == (len(life_list) - 1)):
-        print("Game Over")
+        print("The word was " + choosen_word)
+        print("*************************************Game Over*************************************")
         exit()
  
 # first print blanks to find number of letter the word has
@@ -30,6 +32,13 @@ for letter in choosen_word:
     blank_list.append("-")
 print("".join(blank_list))
 
+def check_repeat():
+    if choose_letter in blank_list:#If player enters same letter, say that letter is already guessed
+        print("You have already guessed this letter")
+        return False
+    return True
+
 while(True): #Here we can monitor game_over to exit
     choose_letter = input("Enter a letter: ").upper() 
-    choose_and_check()
+    if(check_repeat()):
+        choose_and_check()

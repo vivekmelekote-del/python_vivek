@@ -2,6 +2,10 @@
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent)) #Add a folder to the top of Python’s search list so imports work from that location first.
+
+# This is here, as the above statement has to execute before this statement as, 
+# above statement changes OS path to find the file outside this folder
+#from libfile.lib_file import health
 import libfile.lib_file as lib_file
 # print(sys.path[0])# this will print the current directory
 # print(sys.path[1])# this will print the parent directory
