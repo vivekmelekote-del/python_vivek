@@ -1,4 +1,7 @@
 import random
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 import libfile.lib_file as lib_file
 print(lib_file.integer_val)
 input_num = input("Enter 1: for Rock, 2: for Paper or 3: for Scissors: ")
