@@ -75,3 +75,12 @@ Sixth_life = '''
      |
      |
    __|___'''   
+Seventh_life = '''
+      _______
+     |/      |
+     |
+     |
+     |
+     |
+   __|___'''
+health = [Fifth_life, Fouth_life, Third_life, Second_life, First_life]
