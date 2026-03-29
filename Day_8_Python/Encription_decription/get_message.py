@@ -3,7 +3,7 @@ from random import randint
 #Get the message from user to encript
 # class init_data:
 class init():
-    input_message = input("Enter the message: ")#.upper()
+    input_message = ""
     # user_input = input("Enter \nENCODE\nDECODE\nCONTINUE ")
 
     #Alphabee list to take reference for encription
