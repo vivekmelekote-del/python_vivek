@@ -1,2 +1,15 @@
 #Build method : python "file_name.py"
 cls -> clear screen on command prompt
+Additional information : https://ascii.co.uk/art , #https://docs.python.org/3/library/random.html
+
+
+Day 1 : [print and input]
+Day 2 : [Operators, datatypes, variables]
+Day 3 : [Conditional statements, logical operators, code blocks and scope]
+Day 4 : [ Randomization, list, Randomization : Unpridictable (Python uses : MERSENNE TWISTER), Link to stury randon generator : https://docs.python.org/3/library/random.html]
+Day 4 : [List -> Refer list related function -> https://docs.python.org/3/tutorial/datastructures.html, Nested list]
+Day 5 : [loops, range, code blocks]
+Day 6 : [Code blocks, Functions, While loops]
+Day 7 : [Hang man project]
+Day 8 : [Functions with input, Love calculator project, encript decript project]
+Day 9 : [Dictionary, nested Dictionary and list]
