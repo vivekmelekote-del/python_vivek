@@ -12,15 +12,19 @@ def get_the_winner():
             print("\n" * 100)
     # print(dictionary)
 
-    highest_bid = 0
-    Winner = ""
-    for names in dictionary:
-        # print(names)
-        if dictionary[names] > highest_bid:
-            highest_bid = dictionary[names]
-            Winner = names
+    #The easiest way to find highest is max function
+    highest_bid = max(dictionary, key = dictionary.get) #Gives the key with highest value, only works for numarical value
+
+    # highest_bid = 0
+    # Winner = ""
+    # for names in dictionary:
+    #     # print(names)
+    #     if dictionary[names] > highest_bid:
+    #         highest_bid = dictionary[names]
+    #         Winner = names
     print("\n\n")
     #Print the winner and the amount paied
-    print(f"The winner of the bid is \t{Winner} with the bid money of \t{dictionary[Winner]}")
+    # print(f"The winner of the bid is \t{Winner} with the bid money of \t{dictionary[Winner]}")
+    print(f"The winner of the bid is \t{highest_bid} with the bid money of \t{dictionary[highest_bid]}")
 
 get_the_winner()
