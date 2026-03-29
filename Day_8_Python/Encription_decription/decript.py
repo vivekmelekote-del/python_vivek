@@ -21,5 +21,4 @@ def decript(encripted_message, shift_count):
             
             
 def start():
-    # global message_decript
     decript(init_object.encripted_message, init_object.shift_count)
