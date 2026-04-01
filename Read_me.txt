@@ -1,6 +1,7 @@
 #Build method : python "file_name.py"
 cls -> clear screen on command prompt
 Additional information : https://ascii.co.uk/art , #https://docs.python.org/3/library/random.html
+Title function: https://stackoverflow.com/questions/8347048/how-to-convert-string-to-title-case-in-python (To make all word starts with capital letter) Python officela link : https://docs.python.org/3/library/stdtypes.html#str.title
 
 
 Day 1 : [print and input]
@@ -13,3 +14,4 @@ Day 6 : [Code blocks, Functions, While loops]
 Day 7 : [Hang man project]
 Day 8 : [Functions with input, Love calculator project, encript decript project]
 Day 9 : [Dictionary, nested Dictionary and list]
+Day 10 : [Functions with output, Docstrings]
