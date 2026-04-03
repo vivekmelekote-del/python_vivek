@@ -70,6 +70,7 @@ def check_for_sufficient_content(drink):
     for item in drink:
         if(MACHINE_CONTENT['storage'][j] >= item):
             count +=1
+            j += 1
     if count == 3:
         return 1
     else:
