@@ -3,6 +3,8 @@ cls -> clear screen on command prompt
 Additional information : https://ascii.co.uk/art , #https://docs.python.org/3/library/random.html
 Title function: https://stackoverflow.com/questions/8347048/how-to-convert-string-to-title-case-in-python (To make all word starts with capital letter) Python officela link : https://docs.python.org/3/library/stdtypes.html#str.title
 
+Helps to debug the code like C, C++, python :https://pythontutor.com/visualize.html#mode=display
+
 
 Day 1 : [print and input]
 Day 2 : [Operators, datatypes, variables]
@@ -17,3 +19,4 @@ Day 9 : [Dictionary, nested Dictionary and list]
 Day 10 : [Functions with output, Docstrings]
 Day 11 : [sum(), list_name.remove(), list_name.append() function]
 Day 12 : [Scope, namespace, updating global variables(global keyword), prime number, constants variable(Just naming convention, not really a constants)]
+Day 13 : [Errors_Bugs_Try_And_Exception, debugging using https://pythontutor.com/visualize.html#mode=display]
