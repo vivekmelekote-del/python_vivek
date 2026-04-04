@@ -22,3 +22,4 @@ Day 12 : [Scope, namespace, updating global variables(global keyword), prime num
 Day 13 : [Errors_Bugs_Try_And_Exception, debugging using https://pythontutor.com/visualize.html#mode=display]
 Day 14 : [Higher or lower game]
 Day 15 : [Coffee machine project]
+Day 16 : [OOPs, attributes, methods, creating objects using class. Turtle library = https://docs.python.org/3/library/turtle.html, prettytable documentation = https://code.google.com/archive/p/prettytable/wikis/Tutorial.wiki]
