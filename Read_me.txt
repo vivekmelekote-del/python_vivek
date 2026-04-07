@@ -5,6 +5,7 @@ Title function: https://stackoverflow.com/questions/8347048/how-to-convert-strin
 
 Helps to debug the code like C, C++, python :https://pythontutor.com/visualize.html#mode=display
 
+Day 17 is important for OOPS concept
 
 Day 1 : [print and input]
 Day 2 : [Operators, datatypes, variables]
@@ -23,3 +24,4 @@ Day 13 : [Errors_Bugs_Try_And_Exception, debugging using https://pythontutor.com
 Day 14 : [Higher or lower game]
 Day 15 : [Coffee machine project]
 Day 16 : [OOPs, attributes, methods, creating objects using class. Turtle library = https://docs.python.org/3/library/turtle.html, prettytable documentation = https://code.google.com/archive/p/prettytable/wikis/Tutorial.wiki]
+Day 17 : [Class, "Pass" keyword, constructor, pass keywords, Quiz game]
