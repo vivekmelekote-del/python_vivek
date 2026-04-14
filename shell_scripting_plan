@@ -1,0 +1,126 @@
+30-Day Shell Scripting Plan
+
+This is a PowerShell-first plan built around your Python work in `python_vivek`. Spend 30 to 45 minutes a day, and always type the commands yourself.
+
+1. Day 1: Learn `pwd`, `Get-ChildItem`, `Set-Location`, `Get-Content`.
+   Practice by moving around `python_vivek` and opening `.py` files.
+
+2. Day 2: Learn to create, copy, move, and delete safely with `New-Item`, `Copy-Item`, `Move-Item`, `Remove-Item`.
+   Practice inside a test folder only.
+
+3. Day 3: Learn variables.
+   Example:
+   ```powershell
+   $name = "vivek"
+   $path = "c:\Git\python\python_vivek"
+   ```
+
+4. Day 4: Learn arrays and loops.
+   Example:
+   ```powershell
+   $files = Get-ChildItem *.py
+   foreach ($file in $files) { $file.Name }
+   ```
+
+5. Day 5: Learn filtering with `Where-Object`.
+   Find only Python files or files bigger than a certain size.
+
+6. Day 6: Learn selecting fields with `Select-Object`.
+   Show only file names, lengths, and modified dates.
+
+7. Day 7: Learn pipes deeply.
+   Example:
+   ```powershell
+   Get-ChildItem -Recurse | Where-Object {$_.Extension -eq ".py"} | Select-Object FullName
+   ```
+
+8. Day 8: Learn text search with `Select-String`.
+   Search for `prettytable`, `class`, or `import` in your repo.
+
+9. Day 9: Learn sorting and grouping.
+   Use `Sort-Object` and `Group-Object` on files by extension.
+
+10. Day 10: Learn functions.
+    Write a small function that lists all Python files in a folder.
+
+11. Day 11: Learn script files `.ps1`.
+    Create a script that prints all subfolders in your repo.
+
+12. Day 12: Learn parameters in scripts.
+    Make a script accept a folder path as input.
+
+13. Day 13: Learn if/else logic.
+    Example: if a file exists, print success; else print not found.
+
+14. Day 14: Learn `try/catch`.
+    Practice handling bad paths or missing files.
+
+15. Day 15: Learn how to run Python from PowerShell.
+    Example:
+    ```powershell
+    python .\Day_10_Python\Function_with_output.py
+    ```
+
+16. Day 16: Use the project venv explicitly.
+    Example:
+    ```powershell
+    .\.venv\Scripts\python.exe script.py
+    ```
+
+17. Day 17: Write a script to run one chosen Python file.
+    Pass the file path as a parameter.
+
+18. Day 18: Write a script to find all `.py` files recursively.
+
+19. Day 19: Write a script to count total Python files in the repo.
+
+20. Day 20: Write a script to search for a keyword in all Python files.
+
+21. Day 21: Write a script to list all classes found with `Select-String "class "`.
+
+22. Day 22: Write a script to list all imports in a chosen folder.
+
+23. Day 23: Write a script that creates a new day folder structure automatically.
+
+24. Day 24: Write a script to back up one folder into another safe location.
+
+25. Day 25: Write a script that checks whether `.venv` exists and prints the Python path.
+
+26. Day 26: Learn output formatting with `Format-Table`.
+
+27. Day 27: Learn objects in PowerShell.
+    Understand that PowerShell passes objects, not plain text like traditional shells.
+
+28. Day 28: Refactor one old script into cleaner functions.
+
+29. Day 29: Combine everything into one utility script for this repo.
+
+30. Day 30: Rebuild 3 scripts from memory.
+
+What To Build
+
+By the end, try to have these 5 scripts:
+
+- `find_py_files.ps1`
+- `run_python_file.ps1`
+- `search_keyword.ps1`
+- `check_venv.ps1`
+- `new_day_folder.ps1`
+
+How To Improve Faster
+
+- Type every command yourself
+- Don’t copy blindly
+- Break commands and inspect output
+- Practice on your own repo, not random examples
+- Keep a personal cheat sheet in `Read_me.txt`
+
+Best Next Step
+
+Start with this today:
+
+```powershell
+Get-ChildItem -Path . -Recurse -Filter *.py | Select-Object FullName
+```
+
+Then modify it until you fully understand every part.

@@ -1,0 +1,109 @@
+Colorgram Installation And Venv Change
+
+Date:
+2026-04-10
+
+What happened:
+
+1. We first tried to install `colorgram.py` into the existing project `.venv`.
+2. That installation failed because the existing `.venv` was using Python 3.15.
+3. `colorgram.py` depends on `Pillow`.
+4. `Pillow` did not have a simple supported install path for Python 3.15 on this Windows setup.
+5. Pip then tried to build `Pillow` from source.
+6. That build failed because required native dependencies such as `zlib` were missing.
+
+Main reason for failure:
+
+- The old project `.venv` was using Python 3.15.
+- `Pillow` support for that environment caused installation problems.
+
+What we checked:
+
+- Installed Python versions on the system:
+  - Python 3.15
+  - Python 3.13
+  - Python 3.11
+
+Decision:
+
+- Use Python 3.13 for the project virtual environment.
+
+What we changed:
+
+1. The old project virtual environment was preserved by renaming it to:
+   `c:\Git\python\python_vivek\.venv_py315_backup`
+
+2. A fresh project virtual environment was created at:
+   `c:\Git\python\python_vivek\.venv`
+
+3. The new `.venv` uses Python 3.13.
+
+Packages installed successfully in the new `.venv`:
+
+- `colorgram.py`
+- `prettytable`
+- `pillow`
+- `wcwidth`
+
+Verified interpreter:
+
+`C:\Git\python\python_vivek\.venv\Scripts\python.exe`
+
+Verified package paths:
+
+- `colorgram`:
+  `C:\Git\python\python_vivek\.venv\Lib\site-packages\colorgram\__init__.py`
+
+- `prettytable`:
+  `C:\Git\python\python_vivek\.venv\Lib\site-packages\prettytable\__init__.py`
+
+Why `import colorgram` may still fail in VS Code:
+
+- The package is installed correctly.
+- The most likely reason is that VS Code is still using the wrong interpreter.
+- If VS Code uses global Python or the old venv, it will not find `colorgram` from the new `.venv`.
+
+Correct interpreter to select in VS Code:
+
+`C:\Git\python\python_vivek\.venv\Scripts\python.exe`
+
+How to activate the correct venv in PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+How to verify `colorgram`:
+
+```powershell
+.\.venv\Scripts\python.exe -c "import colorgram; print(colorgram.__file__)"
+```
+
+How to verify `prettytable`:
+
+```powershell
+.\.venv\Scripts\python.exe -c "import prettytable; print(prettytable.__file__)"
+```
+
+Compatibility check summary:
+
+- A syntax-level check of project Python files passed under Python 3.13.
+- No Python 3.13 syntax errors were found in the project files.
+- Some warnings were seen for ASCII-art strings because of invalid escape sequences, but those are warnings only and not package or venv failures.
+
+Recommendation going forward:
+
+- Use only the new `.venv` for this project.
+- Do not import packages from the old venv directly.
+- If needed, activate the old backup venv only for reference or comparison:
+
+```powershell
+.\.venv_py315_backup\Scripts\Activate.ps1
+```
+
+Final conclusion:
+
+- `colorgram` is installed correctly in the new Python 3.13 project venv.
+- `prettytable` is also installed correctly in the new venv.
+- The project should use:
+  `C:\Git\python\python_vivek\.venv\Scripts\python.exe`
