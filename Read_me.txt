@@ -28,3 +28,5 @@ Day 17 : [Class, "Pass" keyword, constructor, pass keywords, Quiz game]
 Day 18 : [tkinker colors link : https://trinket.io/docs/colors, cs111 colors : https://cs111.wellesley.edu/reference/colors]
          [turtle move in different shapes project, speed(), pencolor(), tuples, Color mix and matching: https://www.w3schools.com/colors/colors_rgb.asp]
          [Generating different colors using turtle.colormode and rgb colors, heading, setheading, and lot more]
+Day 19 : [Higher order function : Passing function as argumen to another function. 
+         Example : calculator( a, b, add) where add is another function all together, setup(), textinput() of turtle screen class]
